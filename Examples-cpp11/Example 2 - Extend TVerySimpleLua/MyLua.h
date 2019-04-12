@@ -5,7 +5,7 @@
 #include "../../Source/VerySimple.Lua.hpp"
 #include "../../Source/VerySimple.Lua.Lib.hpp"
 //---------------------------------------------------------------------------
-class TMyLua : public TVerySimpleLua
+class DELPHICLASS TMyLua : public TVerySimpleLua
 {
     typedef Verysimple::Lua::TVerySimpleLua inherited;
 

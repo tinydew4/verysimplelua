@@ -19,11 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
     try {
         std::unique_ptr<TMyLua> Lua(std::make_unique<TMyLua>());
-        Lua->LibraryPath = String("../../DLL/Win64/") + LUA_LIBRARY;
-        Lua->AutoRegister = false;
-        Lua->RegisterFunction("HelloWorld");
-        Lua->RegisterFunction("HelloWorld2");
-        Lua->RegisterFunction("HelloWorld3");
+        Lua->LibraryPath = String("../../DLL/Win32/") + LUA_LIBRARY;
         Lua->DoFile("example2.lua");
         std::cin.get();
     } catch (Exception &E) {
